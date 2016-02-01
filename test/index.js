@@ -11,6 +11,8 @@ test('with null geometries', t => collectAndTest('nullGeom', 1084, t))
 
 test('vanilla geojson', t => collectAndTest('fc', 100, t))
 
+test('single polygon', t => collectAndTest('singlePoly', 1, t))
+
 function collectAndTest (fixture, count, t) {
   t.plan(2)
   let json = ''

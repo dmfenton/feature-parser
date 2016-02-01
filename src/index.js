@@ -24,7 +24,8 @@ function filter (string, first) {
   if (string === _.nil) return _.nil
   let filtered = first ? string.split(beginning)[1] : string
   const last = filtered.match(ending)
-  if (first) return `${filtered}}`
+  if (first && last) return filtered.replace(ending, '}')
+  else if (first) return `${filtered}}`
   else if (last) return `{${filtered.replace(ending, '}')}`
   else return `{${filtered}}`
 }
