@@ -1,6 +1,6 @@
 {
   "name": "feature-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Parse a stream of geojson into individual features",
   "main": "index.js",
   "directories": {
