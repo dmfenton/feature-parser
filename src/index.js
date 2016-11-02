@@ -1,8 +1,8 @@
 'use strict'
 const _ = require('highland')
-const beginning = /"features"\s{0,}?:\s{0,}?\[/
-const ending = /\}\s{0,}\]\s{0,}\}\s{0,}$/
-const seperator = /\}\s{0,},\s{0,}\{/
+const beginning = /"features"\s*:\s*\[/
+const ending = /\}\s*\]\s*\}\s*$/
+const seperator = /\}\s*,\s*\{/
 
 function parse (options) {
   let firstFeature = true
