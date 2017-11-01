@@ -26,17 +26,12 @@
   },
   "homepage": "https://github.com/dmfenton/feature-parser#readme",
   "devDependencies": {
-    "babel-cli": "^6.4.5",
-    "babel-plugin-transform-es2015-arrow-functions": "^6.4.0",
-    "babel-plugin-transform-es2015-block-scoping": "^6.4.0",
-    "babel-plugin-transform-es2015-shorthand-properties": "^6.3.13",
-    "babel-preset-es2015": "^6.3.13",
     "geo-xform": "^1.0.14",
-    "standard": "^5.4.1",
-    "tap-spec": "^4.1.1",
-    "tape": "^4.4.0"
+    "standard": "*",
+    "tap-spec": "*",
+    "tape": "*"
   },
   "dependencies": {
-    "highland": "git+https://github.com/caolan/highland.git#0c6dcea9e702080a8728976839c0551b4b38c7c9"
+    "highland": "^3.0.0-beta.5"
   }
 }

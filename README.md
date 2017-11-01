@@ -11,3 +11,5 @@ request.get(/* remote geojson */)
 .batch(500)
 .each(batch => /* do something with your batch */)
 ```
+
+To parse newline delimited json pass `{ndJSON: true}`

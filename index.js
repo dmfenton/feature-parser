@@ -2,14 +2,16 @@
 const _ = require('highland')
 const beginning = /"features"\s*:\s*\[/
 const ending = /\}\s*\]\s*\}\s*$/
-const seperator = /\}\s*,\s*\{/
+const commaSeperator = /\}\s*,\s*\{/
 
-function parse (options) {
+function parse (options = {}) {
   let firstFeature = true
+  const seperator = options.ndJSON ? '\n' : commaSeperator
   return _.pipeline(stream => {
     return stream
     .splitBy(seperator)
     .map(string => {
+      if (options.ndJSON) return string
       try {
         const feature = filter(string, firstFeature)
         firstFeature = false

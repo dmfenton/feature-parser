@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## Unreleased
+### Added
+* Support newline delimited json
+
+### Breaking
+* Drop support for < Node 4
+
 ## [1.0.1] - 02-01-2016
 ### Fixed
 * Handle single feature geojson
