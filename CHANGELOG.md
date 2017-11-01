@@ -7,7 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 * Support newline delimited json
 
 ### Breaking
-* Drop support for < Node 4
+* Drop support for < Node 6
 
 ## [1.0.1] - 02-01-2016
 ### Fixed
