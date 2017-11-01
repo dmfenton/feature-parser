@@ -36,7 +36,7 @@ function collectAndTest (fixture, count, t) {
 
 test('parsing ndjson', t => {
   _(fs.createReadStream(`${__dirname}/fixtures/ndjson.txt`))
-  .pipe(FeatureParser.parse({ndJSON:true}))
+  .pipe(FeatureParser.parse({ndJSON: true}))
   .toArray(f => {
     t.equal(f.length, 100, 'All features parsed')
     t.end()
