@@ -7,8 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "standard src/ && npm run compile && tape test/*.js | tap-spec",
-    "compile": "babel src --out-dir ."
+    "test": "standard && tape test/*.js | tap-spec"
   },
   "repository": {
     "type": "git",
